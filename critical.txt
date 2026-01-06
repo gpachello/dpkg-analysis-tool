@@ -1,3 +1,4 @@
+busybox:kernel
 cpio:kernel
 initramfs-tools:kernel
 initramfs-tools-core:kernel
