@@ -1,0 +1,10 @@
+cpio:kernel
+initramfs-tools:kernel
+initramfs-tools-core:kernel
+linux-image-6.12.57+deb13-amd64:kernel
+linux-image-amd64:kernel
+ifupdown:network
+network-manager:network
+grub-pc:boot
+grub-pc-bin:boot
+grub2-common:boot
