@@ -168,6 +168,20 @@ This project is inspired by the philosophy of **understanding the system before 
 
 ---
 
+## What's Next
+
+The `summary.txt` file will vary depending on the system context, such as bare-metal, virtual machine (VMware, Hyper-V, Proxmox, QEMU), or container. Each environment results in a different set of installed packages.
+
+What should be preserved and what can be purged depends entirely on the administrator’s criteria and requirements.
+
+Based on `summary.txt`, the administrator can manually build a `safe-list.txt` file, explicitly listing the packages selected for removal.
+
+Finally, a simple script can read `safe-list.txt` and execute `apt-get -y purge`, processing each package line by line.
+
+> This approach prioritizes transparency, auditability, and context-aware decision making over automation.
+
+---
+
 ## License
 
 MIT License
