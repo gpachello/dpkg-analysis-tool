@@ -178,7 +178,7 @@ Based on `summary.txt`, the administrator can manually build a `safe-list.txt` f
 
 Finally, a simple script can read `safe-list.txt` and execute `apt-get -y purge`, processing each package line by line.
 
-> This approach prioritizes transparency, auditability, and context-aware decision making over automation.
+> **This approach prioritizes transparency, auditability, and context-aware decision making over automation.**
 
 ---
 
