@@ -163,6 +163,8 @@ apt-get -s purge <package>
 
 * Debian Wiki – Reduce Debian:
   [https://wiki.debian.org/ReduceDebian](https://wiki.debian.org/ReduceDebian)
+* Packages Wiki - Official packages list:
+  `https://packages.debian.org/stable/<pkg-name>`
 
 This project is inspired by the philosophy of **understanding the system before modifying it**.
 
