@@ -95,7 +95,9 @@ nano : skip [WHITELIST]
 
 ### 3. Critical Packages (Categorized)
 
-Packages that are not necessarily marked as `Essential`, but are **functionally critical**.
+Packages that are not necessarily marked as `Essential` by dpkg but are **functionally critical** for a stable, bootable, and usable system.
+
+Packages listed in `critical.txt` are still reported in `summary.txt`, but are **explicitly marked as excluded** from purge operations using a structured tag that indicates both the **source** and the **reason** for exclusion.
 
 **Example (`critical.txt`):**
 
@@ -111,7 +113,12 @@ Reported as:
 busybox : skip [critical:KERNEL]
 ```
 
-Categories are informational and help during review and auditing.
+The category is not a rule, nor a verdict — it’s a **clue**.
+It helps you read the analysis output, connect dots, and experiment safely while discovering how different packages shape the system.
+
+> **IF** you’re curious enough to edit this file,  
+> **THEN** you’re probably curious enough to understand the consequences.  
+> **ELSE** (**DO** & see what happens)
 
 ---
 
